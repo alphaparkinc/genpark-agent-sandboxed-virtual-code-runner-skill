@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-sandboxed-virtual-code-runner-skill",
+  "version": "1.0.0",
+  "description": "Deterministic sandboxed virtual code execution engine and AST security analyzer verifying multi-language agent code, blocking dangerous syscalls, and capturing isolated execution telemetry.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "code-interpreter",
+    "sandboxed-execution",
+    "ast-security",
+    "e2b",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "validate_syntax_ast",
+      "description": "Verify code syntax and inspect AST hierarchy before execution."
+    },
+    {
+      "name": "analyze_code_safety",
+      "description": "Scan code for forbidden modules, dangerous builtins, and shell injection patterns."
+    },
+    {
+      "name": "execute_virtual_sandbox",
+      "description": "Execute code inside a restricted runtime sandbox and capture stdout/telemetry."
+    },
+    {
+      "name": "run_sandbox_benchmark",
+      "description": "Run comprehensive security and execution sandbox benchmark."
+    }
+  ]
+}
